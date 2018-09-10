@@ -1,0 +1,47 @@
+Exercises 1
+1
+3
+5
+7(b)
+Exercises 2
+No questions, these are the registers for our real Intel processor. This week's lab will be for the hypothetical processor. Get a sense from this section that assembly language instructions use registers. We'll do more with this during the lab.
+
+Exercises 3
+1 (explain your answer with your knowledge of size and the range of unsigned ints)
+3
+Additional Reading
+Read through the additional information for this week. The lab will be the hypothetical processor stuff from The Art Of Assembly Language Programming.Get a sense of the limited instruction set for assembly language of the hypothetical processor, the kinds of things the instructions can (and can't) do, and how they are converted to binary using rules defined by the processor designers.
+===============================================================================================================================
+Ex. 2.1-1.) - 1. Suppose that you buy a 32-bit PC with 512 MB of RAM. What is the 8-hex-digit address of the “last” byte of installed memory?
+
+According to Paragraph 1, Line 3, of 2.1 PC Hardware: Memory; The 32-bit processors use 32-bit labels... each of which can be expressed as 8 hex digits. The first address is 00000000(16) and the last address can be as large as the unsigned number FFFFFFFF(16).
+
+512 MB of RAM - 2^20 = 1 MB 
+512*(2^20) = 512*(1048576) = 536870912d bytes [20000000(16)h] - 1 byte = 536870911d converted to hex = 1FFFFFFF(16).
+
+Answer: The last address is an unsigned number 1FFFFFFF(16).
+
+==========================================================================================================================
+2.1-2.) - *2. Suppose that you buy a 64-bit PC with 1 GB of RAM. What is the 16-hex-digit of the “last” byte of installed memory?
+
+64-bit = 16 hex-digit-address. 1GB = 2^30 = 1073741824 - 1 byte = 1073741823 converted to hex = 3FFFFFFF. 
+
+Answer: 000000003FFFFFFF(16).
+
+==========================================================================================================================
+2.1-3.) - 3. Suppose that you buy a 64-bit PC with 4 GB of RAM. What is the 16-hex-digit of the “last” byte of installed memory?
+
+1 GB = 2^30. 4 GB = 4*(2^30) = 2^32 = 4563402751d converted to Hex = 10FFFFFFF(16).
+
+Answer: 000000010FFFFFFF(16).
+
+==========================================================================================================================
+2.1-5.) - 5. This section states that some Intel Xeon processors can address up to 16 TB of memory. What power of 2 is 16 TB?
+
+Answer:
+
+============================================================================================================================
+2.1-7.(b)) - 7(b). Suppose that you have an Intel 8086. Find the 5-hex-digit address that corresponds to the segment:offset pair: (b) 059A:7A04
+
+Answer:
+==========================================================================================================================
